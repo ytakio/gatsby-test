@@ -7,5 +7,12 @@
 module.exports = {
   /* Your site config here */
   pathPrefix: '/gatsby-test',
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }
